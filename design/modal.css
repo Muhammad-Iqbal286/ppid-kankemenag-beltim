@@ -1,0 +1,51 @@
+.modal-pejabat {
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.modal-layout {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 25px;
+}
+
+.modal-foto img {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.modal-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.modal-jabatan {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.modal-nama {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.modal-nip {
+  font-size: 12px;
+}
+.zoom-item {
+  opacity: 0;
+  transform: scale(0.8);
+  transition:
+    transform 0.6s ease,
+    opacity 0.6s ease;
+}
+
+.zoom-item.show {
+  opacity: 1;
+  transform: scale(1);
+}

@@ -1,0 +1,64 @@
+.ikm-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 30px;
+  height: 100%;
+}
+
+.ikm-title {
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* Chart Container */
+.ikm-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  height: 240px;
+  margin-bottom: 25px;
+}
+
+/* Bar */
+.ikm-bar {
+  flex: 1;
+  background: linear-gradient(180deg, #4ade80, #15803d);
+  border-radius: 12px 12px 0 0;
+  height: 0;
+  animation: growBar 1.2s ease forwards;
+  transition: 0.3s;
+}
+
+.ikm-bar:hover {
+  transform: scaleY(1.05);
+}
+
+/* Animation */
+@keyframes growBar {
+  to {
+    height: calc(var(--val) * 1%);
+  }
+}
+
+/* Result */
+.ikm-result {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.grade {
+  background: #16a34a;
+  color: white;
+  padding: 4px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+}
+
+/* Meta */
+.ikm-meta {
+  font-size: 13px;
+  opacity: 0.7;
+}

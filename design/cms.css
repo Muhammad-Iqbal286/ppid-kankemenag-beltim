@@ -1,0 +1,184 @@
+/* COMING SOON SECTION */
+.coming-soon {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #4caf50, #388e3c);
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.coming-wrapper {
+  position: relative;
+  z-index: 2;
+  padding: 40px 20px;
+}
+
+/* LOGO */
+.logo-wrap {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 25px;
+}
+
+.logo-wrap img {
+  width: 100%;
+  height: auto;
+  animation: float 3.5s ease-in-out infinite;
+  z-index: 2;
+  position: relative;
+}
+
+/* GLOW RING */
+.glow-ring {
+  position: absolute;
+  inset: -15px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  animation: pulse 2.5s infinite;
+}
+
+/* TITLE */
+.title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  animation: fadeDown 1.2s ease;
+}
+
+/* SUBTITLE */
+.subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+  line-height: 1.6;
+  animation: fadeUp 1.4s ease;
+}
+
+/* DIVIDER */
+.divider {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin: 25px 0;
+}
+
+.divider span {
+  width: 10px;
+  height: 10px;
+  background: #c8e6c9;
+  border-radius: 50%;
+  animation: blink 1.5s infinite;
+}
+
+.divider span:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.divider span:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+/* COUNTDOWN TEXT */
+.countdown-text {
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+/* BACKGROUND WAVE */
+.bg-wave {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  width: 110%;
+  height: 220px;
+  background: rgba(255, 255, 255, 0.05);
+  clip-path: polygon(
+    0% 30%,
+    10% 40%,
+    25% 35%,
+    40% 45%,
+    55% 38%,
+    70% 48%,
+    85% 42%,
+    100% 50%,
+    100% 100%,
+    0% 100%
+  );
+  animation: waveMove 6s ease-in-out infinite alternate;
+}
+
+/* ANIMATIONS */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes blink {
+  0%,
+  80%,
+  100% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+
+@keyframes waveMove {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-40px);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 576px) {
+  .logo-wrap {
+    width: 90px;
+    height: 90px;
+  }
+}

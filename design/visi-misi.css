@@ -1,0 +1,69 @@
+.visi-formal {
+  background: #f8f9fa;
+}
+
+.divider {
+  width: 80px;
+  height: 4px;
+  background: #2e7d32;
+}
+
+.vm-box {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* FULLSCREEN MODAL */
+.custom-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 9999;
+}
+
+/* MODAL CONTENT */
+.modal-content-custom {
+  background: white;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  border-radius: 20px 20px 0 0;
+  overflow-y: auto;
+  padding: 40px;
+}
+
+/* HEADER */
+.modal-header-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #2e7d32;
+  padding-bottom: 15px;
+}
+
+.modal-header-custom button {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* BODY */
+.modal-body-custom {
+  margin-top: 25px;
+  line-height: 1.8;
+}
+
+/* SLIDE ANIMATION */
+.slide-up {
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+}
+
+.custom-modal.active .slide-up {
+  transform: translateY(0);
+}

@@ -1,0 +1,116 @@
+/* CARD WRAP */
+.tf-card-wrap {
+  perspective: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+/* CARD WIDE */
+.tf-card-wide {
+  width: 720px;
+  height: 260px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 0.8s;
+}
+
+.tf-card-wide.active {
+  transform: rotateY(180deg);
+}
+
+/* FACE */
+.tf-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  padding: 30px;
+  backface-visibility: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  background: white;
+  color: #333;
+}
+
+/* FRONT FLEX HORIZONTAL */
+.tf-front {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/* BACK */
+.tf-back {
+  transform: rotateY(180deg);
+  text-align: left;
+}
+
+/* LEFT ICON */
+.tf-left {
+  width: 120px;
+  text-align: center;
+}
+
+.tf-icon {
+  font-size: 46px;
+  color: #2e7d32;
+}
+
+/* RIGHT CONTENT */
+.tf-right {
+  flex: 1;
+  text-align: left;
+}
+
+/* BUTTON */
+.tf-open,
+.tf-close {
+  border: none;
+  background: #2e7d32;
+  color: white;
+  padding: 8px 22px;
+  border-radius: 25px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tf-open:hover,
+.tf-close:hover {
+  background: #1b5e20;
+}
+
+/* TABS */
+.tf-tabs {
+  margin-bottom: 12px;
+}
+
+.tf-tab {
+  border: none;
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+.tf-tab.active {
+  background: #2e7d32;
+  color: white;
+}
+
+.tf-panel {
+  display: none;
+}
+
+.tf-panel.active {
+  display: block;
+}
+
+/* HOVER ELEGAN */
+.tf-card-wide:hover {
+  transform: translateY(-6px);
+}
+.tf-card-wide.active:hover {
+  transform: rotateY(180deg) translateY(-6px);
+}

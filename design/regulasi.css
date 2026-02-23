@@ -1,0 +1,135 @@
+/* === CHAT SECTION === */
+.chat-section {
+  background: #f6fdf8;
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.chat-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.chat-bubble {
+  max-width: 70%;
+  padding: 18px 22px;
+  border-radius: 18px;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #66bb6a; /* hijau muda */
+  background: #e8f5e9;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.chat-bubble.left {
+  align-self: flex-start;
+  border-top-left-radius: 6px;
+}
+
+.chat-bubble.right {
+  align-self: flex-end;
+  background: #e0f2f1;
+  border-top-right-radius: 6px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .chat-bubble {
+    max-width: 100%;
+    font-size: 0.95rem;
+  }
+}
+
+/* regulasi tabel  */
+
+/* === TABLE SECTION === */
+.table-section {
+  padding: 80px 20px;
+  background: #ffffff;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.doc-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+}
+
+.doc-table th,
+.doc-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.doc-table thead {
+  background: #4caf50;
+  color: #ffffff;
+}
+
+.btn-download {
+  background: #4caf50;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.btn-download:hover {
+  background: #388e3c;
+}
+
+/* === MOBILE CARD STYLE === */
+@media (max-width: 768px) {
+  .doc-table,
+  .doc-table thead,
+  .doc-table tbody,
+  .doc-table th,
+  .doc-table td,
+  .doc-table tr {
+    display: block;
+    width: 100%;
+  }
+
+  .doc-table thead {
+    display: none;
+  }
+
+  .doc-table tr {
+    background: #f9f9f9;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 12px;
+  }
+
+  .doc-table td {
+    border: none;
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .doc-table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #4caf50;
+  }
+}

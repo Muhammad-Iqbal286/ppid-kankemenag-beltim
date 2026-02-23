@@ -1,0 +1,175 @@
+/* font style */
+
+.font-sans {
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+.font-serif {
+  font-family: "Merriweather", Georgia, serif;
+}
+.font-mono {
+  font-family: "Fira Code", monospace;
+}
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+.font-lato {
+  font-family: "Lato", sans-serif;
+}
+.font-mont {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Font Size */
+
+.text-xs {
+  font-size: 12px;
+}
+.text-sm {
+  font-size: 14px;
+}
+.text-md {
+  font-size: 16px;
+}
+.text-lg {
+  font-size: 18px;
+}
+.text-xl {
+  font-size: 22px;
+}
+.text-2xl {
+  font-size: 26px;
+}
+.text-3xl {
+  font-size: 32px;
+}
+.text-4xl {
+  font-size: 40px;
+}
+.text-5xl {
+  font-size: 48px;
+}
+.text-hero {
+  font-size: 64px;
+}
+
+/* Font Weight */
+
+.fw-thin {
+  font-weight: 100;
+}
+.fw-light {
+  font-weight: 300;
+}
+.fw-regular {
+  font-weight: 400;
+}
+.fw-medium {
+  font-weight: 500;
+}
+.fw-semibold {
+  font-weight: 600;
+}
+.fw-bold {
+  font-weight: 700;
+}
+.fw-extrabold {
+  font-weight: 800;
+}
+.fw-black {
+  font-weight: 900;
+}
+
+/* Font Color */
+
+.text-white {
+  color: #ffffff;
+}
+.text-black {
+  color: #000000;
+}
+.text-gray {
+  color: #6b7280;
+}
+.text-dark {
+  color: #1f2937;
+}
+.text-muted {
+  color: #9ca3af;
+}
+.text-light {
+  color: #f3f4f6;
+}
+
+.text-primary {
+  color: #2563eb;
+} /* biru */
+.text-success {
+  color: #16a34a;
+} /* hijau */
+.text-warning {
+  color: #f59e0b;
+} /* kuning */
+.text-danger {
+  color: #dc2626;
+} /* merah */
+.text-info {
+  color: #0ea5e9;
+} /* cyan */
+
+.text-indigo {
+  color: #4f46e5;
+}
+.text-emerald {
+  color: #10b981;
+}
+.text-rose {
+  color: #f43f5e;
+}
+.text-violet {
+  color: #8b5cf6;
+}
+.text-sky {
+  color: #0ea5e9;
+}
+.text-amber {
+  color: #f59e0b;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-capital {
+  text-transform: capitalize;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+.italic {
+  font-style: italic;
+}
+.underline {
+  text-decoration: underline;
+}
+.line-tight {
+  line-height: 1.2;
+}
+.line-normal {
+  line-height: 1.6;
+}
+.line-loose {
+  line-height: 2;
+}

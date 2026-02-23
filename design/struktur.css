@@ -1,0 +1,198 @@
+.org-section {
+  padding: 80px 20px;
+  background: #ffffff;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.org-container {
+  max-width: 1100px;
+  margin: auto;
+  position: relative;
+}
+
+/* row layout */
+.org-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 25px 0;
+}
+.org-row.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* biar garis tepat di tengah card */
+  justify-content: flex-start;
+  gap: 0; /* hilangkan jarak antar elemen */
+  margin: 0; /* hapus margin bawaan row */
+  margin-left: 450px;
+  margin-bottom: 100px;
+}
+
+/* kontrol jarak antar elemen secara presisi */
+.org-row.right .card-bio {
+  margin-bottom: 8px;
+}
+
+.org-row.right .line-vertical {
+  margin: 0;
+}
+
+.org-row.right .card-fung {
+  margin-top: 8px;
+}
+
+/* kalau masih ada jarak dari parent */
+.level-2-right {
+  margin: 0;
+  padding: 0;
+}
+.org-row.bidang {
+  justify-content: space-between;
+}
+
+/* CARD BIO */
+.card-bio {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  min-width: 220px;
+}
+
+.card-bio img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.bio-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.jabatan {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.nama {
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.nip {
+  font-size: 10px;
+}
+
+/* CARD FUNGSIONAL */
+.card-fung {
+  padding: 12px 24px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  color: white;
+  font-size: 13px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* GARIS */
+.line-vertical {
+  width: 2px;
+  height: 30px;
+  background: #555;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.branch-line {
+  position: relative;
+  height: 50px;
+}
+
+.line-up {
+  width: 2px;
+  height: 150px;
+  background: #555;
+  margin: auto;
+}
+
+.line-down {
+  width: 2px;
+  height: 100px;
+  background: #555;
+  margin: auto;
+}
+
+.line-down-bid-1 {
+  width: 2px;
+  height: 49px;
+  background: #555;
+  position: absolute;
+  right: 90%;
+  top: 250px;
+}
+
+.line-down-bid-2 {
+  width: 2px;
+  height: 49px;
+  background: #555;
+  position: absolute;
+  right: 63%;
+  top: 250px;
+}
+
+.line-down-bid-3 {
+  width: 2px;
+  height: 49px;
+  background: #555;
+  position: absolute;
+  left: 63%;
+  top: 250px;
+}
+
+.line-down-bid-4 {
+  width: 2px;
+  height: 49px;
+  background: #555;
+  position: absolute;
+  left: 90%;
+  top: 250px;
+}
+
+.line-right {
+  width: 89px;
+  height: 2px;
+  background: #555;
+  position: absolute;
+  right: 42%;
+  top: 88px;
+}
+
+.line-right2 {
+  width: 530px;
+  height: 2px;
+  background: #555;
+  position: absolute;
+  right: 42%;
+  top: 249px;
+}
+.line-left {
+  width: 442px;
+  height: 2px;
+  background: #555;
+  position: absolute;
+  left: 50%;
+  top: 249px;
+}
+
+/* bidang item */
+.bidang-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
